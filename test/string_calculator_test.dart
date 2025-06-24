@@ -14,4 +14,8 @@ void main() {
   test("Two number comma separated", () {
     expect(calculator.add("1,5"), 6);
   });
+
+  test("Multiple number", (){
+    expect(calculator.add("1,5,6"), 12);
+  });
 }
