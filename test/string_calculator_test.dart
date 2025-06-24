@@ -10,4 +10,8 @@ void main() {
   test("Single number return", () {
     expect(calculator.add("3"), 3);
   });
+  
+  test("Two number comma separated", () {
+    expect(calculator.add("1,5"), 6);
+  });
 }
