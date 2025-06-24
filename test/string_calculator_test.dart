@@ -6,4 +6,8 @@ void main() {
   test("Empty String return 0", () {
     expect(calculator.add(""), 0);
   });
+
+  test("Single number return", () {
+    expect(calculator.add("3"), 3);
+  });
 }
