@@ -18,4 +18,8 @@ void main() {
   test("Multiple number", (){
     expect(calculator.add("1,5,6"), 12);
   });
+
+  test("Handle newline between numbers", (){
+    expect(calculator.add("1\n2,3"), 6);
+  });
 }
